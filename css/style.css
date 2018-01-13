@@ -1,0 +1,65 @@
+ #map {
+ 	height: 100vh;
+}
+
+.leftCol{
+	overflow: auto;
+	max-height: 100vh;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+.row .col.s3.padding0 {
+	padding: 0;
+}
+
+.row .col.S4.streetview{
+	width: 100%;
+	height: auto;
+}
+
+.streetview{
+	width: 90px;
+}
+
+.collapsible-header i{
+	margin: 0;
+	width:auto;
+	font-size: 1em;
+}
+
+.btn {
+	padding: 0 1rem;
+	background-color: blue;
+}
+
+.btn-flat {
+	background-color: blue;
+	color: white;
+}
+
+.row .col.s12.divBtnAddRestaurant{
+	padding: 0.5rem;
+}
+
+#starSelection .row{
+	margin: 1rem 0;
+}
+
+.ratingsRestaurant {
+	padding-right: 1rem;
+	float: left;
+}
+
+.colRestaurantRatings {
+	text-align: justify;
+	padding: 0.5rem !important;
+}
+
+.col.s10 {
+	font-weight: bold;
+}
+

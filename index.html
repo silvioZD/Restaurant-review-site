@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> 
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/googleStyle.min.css">
+        <link rel="stylesheet" type="text/css" href="css/starRating.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Restaurant review site</title>
+    </head>
+    <body>
+    <div class="row">
+    <div class="col s9" id="map"></div>
+        <div class="col s3 padding0 leftCol">
+            <div class="row">
+            <div class="col s12" id="starSelection"></div>
+            <ul class="col s12 collapsible padding0" data-collapsible="accordion"></ul>
+            </div>
+        </div>    
+        </div>
+        <div id="form1" class="modal">
+            <div class="modal-content">
+            <h4>Add review</h4>
+            <div class="row valign-wrapper">
+            <div class="col s4 center-align" id="starsForm"></div>
+            <form class="col s8" id="formRating" onsubmit="return false">
+            <div class="row">
+            <div class="input-field col s12">
+            <input id="newRatingForm" type="text" class="validate" required>
+            <label for="newRatingForm">Your comment</label>
+            </div>
+            </div>     
+            </form>
+            </div>
+            </div>
+            <div class="modal-footer">
+            <button href="#!" type="submit" form="formRating" class="modal-action waves-effect waves-green btn-flat">Add</a>
+            </div>
+        </div>
+        <div id="form2" class="modal">
+            <div class="modal-content">
+            <h4>Add restaurant</h4>
+            <div class="row valign-wrapper">
+            <form class="col s12" id="formRestaurant" onsubmit="return false">
+            <div class="row">
+            <div class="input-field col s12">
+            <input id="newRestaurantName" type="text" class="validate" required>
+            <label for="newRestaurantName">Restaurant name</label>
+            </div>
+            <div class="input-field col s12">
+            <input placeholder=" " id="newRestaurantAddress" type="text" class="validate" required>
+            <label for="newRestaurantAddress">Restaurant address</label>
+            </div>
+            </div>     
+            </form>
+            </div>
+            </div>
+            <div class="modal-footer">
+            <button href="#!" type="submit" form="formRestaurant" class="modal-action waves-effect waves-green btn-flat">Add</a>
+            </div>
+        </div>
+        <script src="js/lib/jquery-3.2.1.min.js"></script>
+        <script src="js/lib/googleStyle.min.js"></script>
+        <script src="js/lib/jquery.starRating.min.js"></script>
+        <script src="js/mapMarkers.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9o0INXclgbhXVnK6O2v21kU9_i2NxiqM&libraries=places&callback=initMap"></script>
+        <script src="js/restaurants.js"></script>
+        <script src="js/ratings.js"></script>
+        <script src="js/mapActions.js"></script>
+        <script src="js/mapMarkers.js"></script>
+        <script src="js/forms.js"></script>
+
+    </body>
+</html>
+
+
